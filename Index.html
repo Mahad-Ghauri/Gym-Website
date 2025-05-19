@@ -4,44 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Fitness Ceneter</title>
+    <title>Technical Fitness Center</title>
+    <link rel="stylesheet" href="CSS/Gym_StyleSheet.css">
+    <link rel="stylesheet" href="CSS/navigation.css">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3') no-repeat center center;
+            background-size: cover;
+            margin: 0px;
+            padding: 0px;
+            padding-top: 80px; /* Add padding for fixed header */
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="CSS/Gym_StyleSheet.css">
-<style>
-    body {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('Images/bg.jpg') no-repeat center center;
-        background-size: cover;
-        margin: 0px;
-        padding: 0px;
-
-    }
-</style>
 
 <body>
     <header class="header">
         <div class="left">
             <h4>Technical Fitness Center</h4>  
-            <img src="Images/Logo-removebg-preview.png" alt="FitnessLogo" style="padding-left: 10;">
+            <img src="Images/Logo-removebg-preview.png" alt="FitnessLogo">
         </div>
+
+        <button class="mobile-menu-btn">☰</button>
 
         <div class="mid">
             <nav class="navbar">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Gym Timings</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="Index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
 
-
         <div class="right">
-            <buttton class="btn">Call Us Now</buttton>
-            <buttton class="btn">Email Us</buttton>
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
         </div>
-
     </header>
 
     <div class="container">
@@ -65,7 +70,7 @@
         </form>
     </div>
 
-
+    <script src="Js/navigation.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,175 @@
+/* Custom Navigation Styles */
+.header {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.left h4 {
+    color: #ff4d4d;
+    font-size: 24px;
+    margin: 0;
+}
+
+.left img {
+    height: 50px;
+    width: auto;
+}
+
+.mid {
+    flex: 1;
+    margin: 0 30px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #ff4d4d;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar a:hover::after {
+    width: 80%;
+}
+
+.navbar a.active {
+    color: #ff4d4d;
+}
+
+.navbar a.active::after {
+    width: 80%;
+}
+
+.right {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #ff3333;
+    transform: translateY(-2px);
+}
+
+/* Mobile Navigation */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .navbar ul {
+        gap: 10px;
+    }
+    
+    .navbar a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .mid {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: rgba(0, 0, 0, 0.95);
+        transition: all 0.3s ease;
+        margin: 0;
+    }
+
+    .mid.active {
+        left: 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .right.mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .right.mobile .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+} 
