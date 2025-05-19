@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Technical Fitness Center</title>
+    <link rel="stylesheet" href="CSS/Gym_StyleSheet.css">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3') no-repeat center center;
+            background-size: cover;
+            margin: 0px;
+            padding: 0px;
+        }
+        .contact-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            color: white;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .contact-info {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .contact-form {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .contact-info h2, .contact-form h2 {
+            color: #ff4d4d;
+            margin-bottom: 20px;
+        }
+        .info-item {
+            margin-bottom: 20px;
+        }
+        .info-item h3 {
+            color: #ff4d4d;
+            margin-bottom: 10px;
+        }
+        .info-item p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #444;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .submit-button {
+            background: #ff4d4d;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+            font-size: 16px;
+        }
+        .submit-button:hover {
+            background: #ff3333;
+        }
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #ff4d4d;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #ff3333;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <h4>Technical Fitness Center</h4>  
+            <img src="Images/Logo-removebg-preview.png" alt="FitnessLogo" style="padding-left: 10;">
+        </div>
+
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="contact-container">
+        <h1 style="text-align: center; color: #ff4d4d; margin-bottom: 40px;">Get in Touch</h1>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>123 Fitness Street<br>Health District<br>New York, NY 10001</p>
+                </div>
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>Main: (555) 123-4567<br>Support: (555) 987-6543</p>
+                </div>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>info@technicalfitness.com<br>support@technicalfitness.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 5:00 AM - 11:00 PM<br>
+                       Saturday - Sunday: 6:00 AM - 10:00 PM</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" title="Facebook">📘</a>
+                    <a href="#" title="Instagram">📸</a>
+                    <a href="#" title="Twitter">🐦</a>
+                    <a href="#" title="LinkedIn">💼</a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

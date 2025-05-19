@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - Technical Fitness Center</title>
+    <link rel="stylesheet" href="CSS/Gym_StyleSheet.css">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3') no-repeat center center;
+            background-size: cover;
+            margin: 0px;
+            padding: 0px;
+        }
+        .facilities-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            color: white;
+        }
+        .facility-section {
+            margin-bottom: 60px;
+        }
+        .facility-section h2 {
+            color: #ff4d4d;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+        .facility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .facility-card {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .facility-card:hover {
+            transform: translateY(-5px);
+        }
+        .facility-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .facility-info {
+            padding: 20px;
+        }
+        .facility-name {
+            color: #ff4d4d;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .facility-description {
+            color: #ccc;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .facility-features {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        .facility-features li {
+            color: #ccc;
+            margin: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .facility-features li::before {
+            content: "✓";
+            color: #ff4d4d;
+            position: absolute;
+            left: 0;
+        }
+        .facility-hours {
+            background: rgba(255, 77, 77, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .facility-hours h4 {
+            color: #ff4d4d;
+            margin-bottom: 10px;
+        }
+        .facility-hours p {
+            color: #ccc;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <h4>Technical Fitness Center</h4>  
+            <img src="Images/Logo-removebg-preview.png" alt="FitnessLogo" style="padding-left: 10;">
+        </div>
+
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="facilities.html" class="active">Facilities</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="facilities-container">
+        <h1 style="text-align: center; color: #ff4d4d; margin-bottom: 40px;">Our World-Class Facilities</h1>
+
+        <div class="facility-section">
+            <h2>Training Areas</h2>
+            <div class="facility-grid">
+                <div class="facility-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3" alt="Main Gym Floor" class="facility-image">
+                    <div class="facility-info">
+                        <h3 class="facility-name">Main Gym Floor</h3>
+                        <p class="facility-description">State-of-the-art equipment and spacious workout areas for all your fitness needs.</p>
+                        <ul class="facility-features">
+                            <li>Cardio equipment</li>
+                            <li>Free weights</li>
+                            <li>Resistance machines</li>
+                            <li>Functional training area</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3" alt="CrossFit Box" class="facility-image">
+                    <div class="facility-info">
+                        <h3 class="facility-name">CrossFit Box</h3>
+                        <p class="facility-description">Dedicated space for CrossFit and functional training workouts.</p>
+                        <ul class="facility-features">
+                            <li>Olympic lifting platforms</li>
+                            <li>Rig system</li>
+                            <li>Rowing machines</li>
+                            <li>Battle ropes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3" alt="Yoga Studio" class="facility-image">
+                    <div class="facility-info">
+                        <h3 class="facility-name">Yoga Studio</h3>
+                        <p class="facility-description">Peaceful environment for yoga, meditation, and mind-body classes.</p>
+                        <ul class="facility-features">
+                            <li>Premium yoga mats</li>
+                            <li>Meditation cushions</li>
+                            <li>Sound system</li>
+                            <li>Temperature control</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="facility-section">
+            <h2>Amenities</h2>
+            <div class="facility-grid">
+                <div class="facility-card">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3" alt="Locker Rooms" class="facility-image">
+                    <div class="facility-info">
+                        <h3 class="facility-name">Locker Rooms</h3>
+                        <p class="facility-description">Modern locker rooms with premium amenities for your comfort.</p>
+                        <ul class="facility-features">
+                            <li>Private showers</li>
+                            <li>Sauna</li>
+                            <li>Steam room</li>
+                            <li>Hair dryers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3" alt="Café" class="facility-image">
+                    <div class="facility-info">
+                        <h3 class="facility-name">Health Café</h3>
+                        <p class="facility-description">Nutritious food and supplements to fuel your workout.</p>
+                        <ul class="facility-features">
+                            <li>Protein shakes</li>
+                            <li>Healthy snacks</li>
+                            <li>Smoothies</li>
+                            <li>Nutrition supplements</li>
+                        </ul>
+                        <div class="facility-hours">
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 6:00 AM - 9:00 PM</p>
+                            <p>Saturday - Sunday: 7:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3" alt="Recovery Room" class="facility-image">
+                    <div class="facility-info">
+                        <h3 class="facility-name">Recovery Room</h3>
+                        <p class="facility-description">Dedicated space for post-workout recovery and relaxation.</p>
+                        <ul class="facility-features">
+                            <li>Massage chairs</li>
+                            <li>Recovery equipment</li>
+                            <li>Stretching area</li>
+                            <li>Ice baths</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Technical Fitness Center</title>
+    <link rel="stylesheet" href="CSS/Gym_StyleSheet.css">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3') no-repeat center center;
+            background-size: cover;
+            margin: 0px;
+            padding: 0px;
+        }
+        .membership-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            color: white;
+        }
+        .plans-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .plan-card {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .plan-card:hover {
+            transform: translateY(-5px);
+        }
+        .plan-card.popular::before {
+            content: "Most Popular";
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: #ff4d4d;
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+        }
+        .plan-name {
+            color: #ff4d4d;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .plan-price {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .plan-price span {
+            font-size: 16px;
+            color: #888;
+        }
+        .plan-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .plan-features li {
+            margin: 10px 0;
+            color: #ccc;
+        }
+        .plan-features li::before {
+            content: "✓";
+            color: #ff4d4d;
+            margin-right: 10px;
+        }
+        .plan-button {
+            background: #ff4d4d;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+            font-size: 16px;
+        }
+        .plan-button:hover {
+            background: #ff3333;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <h4>Technical Fitness Center</h4>  
+            <img src="Images/Logo-removebg-preview.png" alt="FitnessLogo" style="padding-left: 10;">
+        </div>
+
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="membership.html" class="active">Membership</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="membership-container">
+        <h1 style="text-align: center; color: #ff4d4d; margin-bottom: 40px;">Choose Your Perfect Plan</h1>
+        
+        <div class="plans-container">
+            <div class="plan-card">
+                <h2 class="plan-name">Basic</h2>
+                <div class="plan-price">$29<span>/month</span></div>
+                <ul class="plan-features">
+                    <li>Access to gym floor</li>
+                    <li>Basic equipment usage</li>
+                    <li>Locker room access</li>
+                    <li>Free parking</li>
+                    <li>Basic fitness assessment</li>
+                </ul>
+                <button class="plan-button">Join Now</button>
+            </div>
+
+            <div class="plan-card popular">
+                <h2 class="plan-name">Premium</h2>
+                <div class="plan-price">$49<span>/month</span></div>
+                <ul class="plan-features">
+                    <li>All Basic features</li>
+                    <li>Group classes included</li>
+                    <li>Personal trainer (2 sessions/month)</li>
+                    <li>Nutrition consultation</li>
+                    <li>Access to all facilities</li>
+                    <li>Priority booking</li>
+                </ul>
+                <button class="plan-button">Join Now</button>
+            </div>
+
+            <div class="plan-card">
+                <h2 class="plan-name">Elite</h2>
+                <div class="plan-price">$79<span>/month</span></div>
+                <ul class="plan-features">
+                    <li>All Premium features</li>
+                    <li>Unlimited personal training</li>
+                    <li>VIP lounge access</li>
+                    <li>Monthly massage session</li>
+                    <li>Priority class booking</li>
+                    <li>Guest passes (2/month)</li>
+                    <li>Exclusive events access</li>
+                </ul>
+                <button class="plan-button">Join Now</button>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; color: #ccc;">
+            <p>All plans include a one-time registration fee of $50</p>
+            <p>Cancel anytime with 30 days notice</p>
+            <p>Family and corporate discounts available</p>
+        </div>
+    </div>
+</body>
+</html> 

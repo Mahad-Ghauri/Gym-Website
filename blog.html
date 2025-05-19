@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Technical Fitness Center</title>
+    <link rel="stylesheet" href="CSS/Gym_StyleSheet.css">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3') no-repeat center center;
+            background-size: cover;
+            margin: 0px;
+            padding: 0px;
+        }
+        .blog-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            color: white;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .blog-card {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-content {
+            padding: 20px;
+        }
+        .blog-date {
+            color: #ff4d4d;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .blog-title {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .blog-excerpt {
+            color: #ccc;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .read-more {
+            color: #ff4d4d;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .read-more:hover {
+            color: #ff3333;
+        }
+        .blog-categories {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .category-tag {
+            background: rgba(255, 77, 77, 0.1);
+            color: #ff4d4d;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+        .search-bar {
+            margin-bottom: 30px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #444;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 5px;
+        }
+        .search-bar input::placeholder {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <h4>Technical Fitness Center</h4>  
+            <img src="Images/Logo-removebg-preview.png" alt="FitnessLogo" style="padding-left: 10;">
+        </div>
+
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="blog-container">
+        <h1 style="text-align: center; color: #ff4d4d; margin-bottom: 40px;">Fitness Blog</h1>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search articles...">
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3" alt="Nutrition" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-categories">
+                        <span class="category-tag">Nutrition</span>
+                        <span class="category-tag">Health</span>
+                    </div>
+                    <div class="blog-date">March 15, 2024</div>
+                    <h3 class="blog-title">10 Essential Nutrients for Muscle Growth</h3>
+                    <p class="blog-excerpt">Discover the key nutrients that play a crucial role in muscle development and recovery...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3" alt="Workout" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-categories">
+                        <span class="category-tag">Workout</span>
+                        <span class="category-tag">Training</span>
+                    </div>
+                    <div class="blog-date">March 12, 2024</div>
+                    <h3 class="blog-title">HIIT vs. Traditional Cardio: Which is Better?</h3>
+                    <p class="blog-excerpt">Compare the benefits of High-Intensity Interval Training with traditional cardio workouts...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3" alt="Wellness" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-categories">
+                        <span class="category-tag">Wellness</span>
+                        <span class="category-tag">Mental Health</span>
+                    </div>
+                    <div class="blog-date">March 10, 2024</div>
+                    <h3 class="blog-title">The Connection Between Exercise and Mental Health</h3>
+                    <p class="blog-excerpt">Explore how regular physical activity can improve your mental well-being...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3" alt="Recovery" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-categories">
+                        <span class="category-tag">Recovery</span>
+                        <span class="category-tag">Tips</span>
+                    </div>
+                    <div class="blog-date">March 8, 2024</div>
+                    <h3 class="blog-title">Essential Recovery Techniques for Athletes</h3>
+                    <p class="blog-excerpt">Learn about the importance of proper recovery and techniques to enhance performance...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3" alt="Equipment" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-categories">
+                        <span class="category-tag">Equipment</span>
+                        <span class="category-tag">Training</span>
+                    </div>
+                    <div class="blog-date">March 5, 2024</div>
+                    <h3 class="blog-title">Must-Have Home Gym Equipment</h3>
+                    <p class="blog-excerpt">Discover the essential equipment you need for an effective home workout setup...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3" alt="Motivation" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-categories">
+                        <span class="category-tag">Motivation</span>
+                        <span class="category-tag">Lifestyle</span>
+                    </div>
+                    <div class="blog-date">March 3, 2024</div>
+                    <h3 class="blog-title">Staying Motivated: Tips for Long-term Success</h3>
+                    <p class="blog-excerpt">Learn how to maintain your motivation and achieve your fitness goals...</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
