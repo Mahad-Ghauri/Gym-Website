@@ -112,13 +112,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 - **Location:** West Shahlimar, Multan District, Multan, Pakistan
-- **Phone:** (061) 325-6978
-- **Support:** +92310-2028871
-- **Email:** info@technicalfitness.com
+- **Phone:** 0310-2027781
+- **Email:** mahadghauri222@gmail.com
 - **Website:** [Technical Fitness Center](https://technicalfitness.com)
 
 ---
 
 <div align="center">
-Made with ❤️ by Technical Fitness Center Team
+Made with ❤️ by Mahad Ghauri
 </div>
